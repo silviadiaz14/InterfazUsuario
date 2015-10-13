@@ -1,2 +1,2 @@
 # InterfazUsuario
-Pizza Game - Tarea Semana 1
+PizzaGame - Tarea Semana 1
