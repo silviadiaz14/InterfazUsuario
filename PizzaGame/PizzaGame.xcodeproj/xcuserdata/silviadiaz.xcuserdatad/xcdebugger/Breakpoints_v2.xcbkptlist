@@ -19,5 +19,98 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PizzaGame/ViewController.swift"
+            timestampString = "466486977.656803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PizzaGame/ViewController.swift"
+            timestampString = "466486977.656803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PizzaGame/TipoQuesoViewController.swift"
+            timestampString = "466491060.371411"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PizzaGame.TipoQuesoViewController.__deallocating_deinit"
+                  moduleName = "PizzaGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silviadiaz/projectsSilvia/InterfazUsuario/PizzaGame/PizzaGame/TipoQuesoViewController.swift"
+                  timestampString = "466491060.661174"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PizzaGame.TipoQuesoViewController.init (PizzaGame.TipoQuesoViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; PizzaGame.TipoQuesoViewController"
+                  moduleName = "PizzaGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silviadiaz/projectsSilvia/InterfazUsuario/PizzaGame/PizzaGame/TipoQuesoViewController.swift"
+                  timestampString = "466491060.702205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PizzaGame.TipoQuesoViewController.init (PizzaGame.TipoQuesoViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;PizzaGame.TipoQuesoViewController&gt;"
+                  moduleName = "PizzaGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silviadiaz/projectsSilvia/InterfazUsuario/PizzaGame/PizzaGame/TipoQuesoViewController.swift"
+                  timestampString = "466491060.702565"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tamano Pizza-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PizzaGame" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,67 +16,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Construye tu propia pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-SF-Dav">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Construye tu propia pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-SF-Dav">
                                 <rect key="frame" x="251" y="28" width="196" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elige un tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlV-rL-9b9">
-                                <rect key="frame" x="288" y="82" width="122" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige un tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlV-rL-9b9">
+                                <rect key="frame" x="239" y="91" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pye-mV-zi2">
-                                <rect key="frame" x="255" y="130" width="188" height="138"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pye-mV-zi2">
+                                <rect key="frame" x="140" y="132" width="320" height="216"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="uhm-GJ-htm"/>
-                                    <constraint firstAttribute="height" constant="138" id="xIn-J0-Xz7"/>
+                                    <constraint firstAttribute="width" constant="320" id="uhm-GJ-htm"/>
+                                    <constraint firstAttribute="height" constant="216" id="xIn-J0-Xz7"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="3HV-rQ-ZzV"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="g1A-ad-2ta"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxt-wg-LRX">
-                                <rect key="frame" x="317" y="292" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxt-wg-LRX">
+                                <rect key="frame" x="263" y="356" width="64" height="30"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
-                                    <segue destination="lnB-CD-3HW" kind="show" id="n7T-gp-VeZ"/>
+                                    <segue destination="lnB-CD-3HW" kind="show" identifier="tipoMasa" id="n7T-gp-VeZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="3g4-Lk-yz9"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="17K-Yj-Ygv"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="2DL-Gd-pFF"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Xx-UZ-kha"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3g4-Lk-yz9"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5OE-JS-1lY"/>
                             <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5bx-pE-gqq"/>
-                            <constraint firstItem="nlV-rL-9b9" firstAttribute="top" secondItem="wdW-SF-Dav" secondAttribute="bottom" constant="33" id="Ckn-d9-Bd0"/>
-                            <constraint firstItem="wdW-SF-Dav" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="D7v-dW-6LL"/>
-                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FFi-hA-qMh"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8E-SK-coz"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="top" secondItem="wdW-SF-Dav" secondAttribute="bottom" constant="42" id="Ckn-d9-Bd0"/>
+                            <constraint firstItem="wdW-SF-Dav" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-36" id="D7v-dW-6LL"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ENK-z6-b2o"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="FFi-hA-qMh"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="GSu-fE-sgN"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I32-Of-gXX"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JXl-Oy-7RR"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JoI-CA-aJs"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kab-DL-fBJ"/>
                             <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L3B-eL-oNc"/>
-                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="PTz-FD-tNG"/>
-                            <constraint firstItem="wdW-SF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PUH-YZ-86h"/>
-                            <constraint firstItem="rxt-wg-LRX" firstAttribute="top" secondItem="pye-mV-zi2" secondAttribute="bottom" constant="24" id="c12-Kt-CdD"/>
-                            <constraint firstItem="wdW-SF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="er8-Uf-GvM"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSz-sV-MGC"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Npk-sq-I21"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="Nrm-c9-S0H"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="Obq-dJ-fZ2"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OfN-zR-Xq6"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PTz-FD-tNG"/>
+                            <constraint firstItem="wdW-SF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="PUH-YZ-86h"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="RJl-5k-NmO"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="Ufo-vo-pgr"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="top" secondItem="pye-mV-zi2" secondAttribute="bottom" constant="8" id="c12-Kt-CdD"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9I-OG-uMt"/>
+                            <constraint firstItem="wdW-SF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="er8-Uf-GvM"/>
                             <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g0f-4O-JVl"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="gtW-AF-bto"/>
                             <constraint firstItem="wdW-SF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="hAX-ev-LnC"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hR5-As-hK6"/>
                             <constraint firstItem="wdW-SF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="iEc-dO-bVb"/>
+                            <constraint firstItem="rxt-wg-LRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="jxN-lr-RDO"/>
                             <constraint firstItem="pye-mV-zi2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="krH-qy-Z7t"/>
-                            <constraint firstItem="pye-mV-zi2" firstAttribute="top" secondItem="nlV-rL-9b9" secondAttribute="bottom" constant="27" id="n1D-Ty-QI3"/>
-                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49" id="sLJ-FX-2n9"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mY8-cw-dzj"/>
+                            <constraint firstItem="pye-mV-zi2" firstAttribute="top" secondItem="nlV-rL-9b9" secondAttribute="bottom" constant="20" id="n1D-Ty-QI3"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sLJ-FX-2n9"/>
+                            <constraint firstItem="nlV-rL-9b9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xg1-A7-k57"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9is-Ru-nXW"/>
+                    <navigationItem key="navigationItem" title="Tamano Pizza" id="9is-Ru-nXW"/>
+                    <connections>
+                        <outlet property="tamanioPicker" destination="pye-mV-zi2" id="WQB-M0-Gdy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="297"/>
         </scene>
-        <!--View Controller-->
+        <!--Tipo Masa-->
         <scene sceneID="JXN-2g-eG9">
             <objects>
-                <viewController id="lnB-CD-3HW" sceneMemberID="viewController">
+                <viewController title="Tipo Masa" id="lnB-CD-3HW" customClass="TipoMasaViewController" customModule="PizzaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="adh-bp-2vG"/>
                         <viewControllerLayoutGuide type="bottom" id="uaa-n3-kl0"/>
@@ -88,34 +115,50 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige un tipo de masa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moo-Bw-x3y">
                                 <rect key="frame" x="216" y="83" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-RH-oyR">
                                 <rect key="frame" x="268" y="304" width="64" height="30"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
-                                    <segue destination="B8s-yk-ZZ1" kind="show" id="eA6-GU-jQy"/>
+                                    <segue destination="B8s-yk-ZZ1" kind="show" identifier="tipoQueso" id="eA6-GU-jQy"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J1y-i9-Fes">
+                                <rect key="frame" x="198" y="202" width="209" height="29"/>
+                                <segments>
+                                    <segment title="Delgada"/>
+                                    <segment title="Crujiente"/>
+                                    <segment title="Gruesa"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Moo-Bw-x3y" firstAttribute="centerX" secondItem="KEf-52-Dl7" secondAttribute="centerX" id="9sd-3z-WJ1"/>
                             <constraint firstItem="Moo-Bw-x3y" firstAttribute="top" secondItem="adh-bp-2vG" secondAttribute="bottom" constant="19" id="A7n-gW-WeT"/>
+                            <constraint firstItem="Y4Y-RH-oyR" firstAttribute="centerX" secondItem="KEf-52-Dl7" secondAttribute="centerX" id="TNW-Rv-F9N"/>
+                            <constraint firstItem="J1y-i9-Fes" firstAttribute="centerX" secondItem="KEf-52-Dl7" secondAttribute="centerX" constant="2.5" id="XcE-VE-wK7"/>
                             <constraint firstItem="Moo-Bw-x3y" firstAttribute="centerX" secondItem="KEf-52-Dl7" secondAttribute="centerX" id="kYD-RD-2Yi"/>
                             <constraint firstItem="uaa-n3-kl0" firstAttribute="top" secondItem="Y4Y-RH-oyR" secondAttribute="bottom" constant="266" id="o5S-bk-Gfn"/>
+                            <constraint firstItem="Y4Y-RH-oyR" firstAttribute="top" secondItem="J1y-i9-Fes" secondAttribute="bottom" constant="74" id="ofx-KP-pOd"/>
                             <constraint firstItem="Y4Y-RH-oyR" firstAttribute="centerX" secondItem="KEf-52-Dl7" secondAttribute="centerX" id="wmu-gR-8TN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Masa" id="xfC-6G-0Fc"/>
+                    <connections>
+                        <outlet property="tipoMasaControl" destination="J1y-i9-Fes" id="XH2-A1-sQQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VQ-dr-gm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="289"/>
+            <point key="canvasLocation" x="1827" y="289"/>
         </scene>
-        <!--View Controller-->
+        <!--Tipo Queso-->
         <scene sceneID="27s-lV-qH1">
             <objects>
-                <viewController id="B8s-yk-ZZ1" sceneMemberID="viewController">
+                <viewController id="B8s-yk-ZZ1" customClass="TipoQuesoViewController" customModule="PizzaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ueK-hG-M5M"/>
                         <viewControllerLayoutGuide type="bottom" id="HUT-nh-nlh"/>
@@ -127,34 +170,51 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige un tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsu-uw-bbc">
                                 <rect key="frame" x="216" y="88" width="169" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSe-Ew-vdq">
                                 <rect key="frame" x="268" y="320" width="64" height="30"/>
                                 <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="fMF-09-P4c" kind="show" identifier="ingredientes" id="LgN-Vy-h4w"/>
+                                </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QX2-8p-VL2">
+                                <rect key="frame" x="118" y="175" width="331" height="29"/>
+                                <segments>
+                                    <segment title="Mozarela"/>
+                                    <segment title="Cheddar"/>
+                                    <segment title="Parmesano"/>
+                                    <segment title="Sin Queso"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zsu-uw-bbc" firstAttribute="top" secondItem="ueK-hG-M5M" secondAttribute="bottom" constant="24" id="Cqh-I3-Ioh"/>
                             <constraint firstItem="zsu-uw-bbc" firstAttribute="centerX" secondItem="APJ-DF-by4" secondAttribute="centerX" id="FTA-N0-o9D"/>
+                            <constraint firstItem="QX2-8p-VL2" firstAttribute="centerX" secondItem="APJ-DF-by4" secondAttribute="centerX" constant="-16.5" id="NBQ-IW-fT9"/>
                             <constraint firstItem="HUT-nh-nlh" firstAttribute="top" secondItem="oSe-Ew-vdq" secondAttribute="bottom" constant="250" id="PPY-cl-CTf"/>
+                            <constraint firstItem="oSe-Ew-vdq" firstAttribute="centerX" secondItem="APJ-DF-by4" secondAttribute="centerX" id="Qoa-BO-Oge"/>
+                            <constraint firstItem="zsu-uw-bbc" firstAttribute="centerX" secondItem="APJ-DF-by4" secondAttribute="centerX" id="X5V-98-DGI"/>
                             <constraint firstItem="oSe-Ew-vdq" firstAttribute="centerX" secondItem="APJ-DF-by4" secondAttribute="centerX" id="gOf-Ra-NkW"/>
+                            <constraint firstItem="QX2-8p-VL2" firstAttribute="top" secondItem="zsu-uw-bbc" secondAttribute="bottom" constant="66" id="ncP-K7-QEG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tipo Queso" id="Z8L-KW-1Il"/>
                     <connections>
-                        <segue destination="fMF-09-P4c" kind="show" id="DqW-a9-dRG"/>
+                        <outlet property="tipoQuesoControl" destination="QX2-8p-VL2" id="CBM-iJ-Ymz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smR-74-Pa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2771" y="289"/>
+            <point key="canvasLocation" x="2687" y="289"/>
         </scene>
-        <!--View Controller-->
+        <!--Ingredientes-->
         <scene sceneID="KTA-j9-r0f">
             <objects>
-                <viewController id="fMF-09-P4c" sceneMemberID="viewController">
+                <viewController id="fMF-09-P4c" customClass="IngredientesViewController" customModule="PizzaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zFU-kP-opW"/>
                         <viewControllerLayoutGuide type="bottom" id="rpy-4A-v0l"/>
@@ -166,7 +226,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona de 1 a 5 ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j76-3M-NMD">
                                 <rect key="frame" x="177" y="103" width="246" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oli-IT-86E">
@@ -176,6 +236,18 @@
                                     <segue destination="Lh7-Nu-oeR" kind="show" id="1cA-n1-kYd"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AFR-wh-X3i">
+                                <rect key="frame" x="160" y="220" width="121" height="28"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h9h-0D-ijv">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -185,6 +257,7 @@
                             <constraint firstItem="rpy-4A-v0l" firstAttribute="top" secondItem="Oli-IT-86E" secondAttribute="bottom" constant="238" id="lQn-3w-pZx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Ingredientes" id="8Za-UL-Tgo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chf-gA-Fp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,7 +278,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quieres confirmar el pedido?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-b5-gbj">
                                 <rect key="frame" x="186" y="104" width="229" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSP-LI-F3D">
